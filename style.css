@@ -1,0 +1,321 @@
+/* Reset dasar */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  color: #e5e7eb;
+  background-color: #064635; /* dark emerald background */
+}
+
+header {
+  background-color: rgba(4, 57, 39, 0.5); /* hijau gelap dengan opacity 50% */
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  gap: 1.5rem;
+  white-space: nowrap;
+}
+
+nav a {
+  color: #b6d9b0;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #9cdbac;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #b6d9b0;
+}
+
+footer {
+  background: #043927;
+  color: #b4d8b6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  font-size: 0.9rem;
+  margin-top: auto;
+  box-sizing: border-box;
+}
+
+.footer-left {
+  text-align: left;
+}
+
+.footer-right {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.footer-right .social-link img {
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.footer-right .social-link:hover img {
+  transform: scale(1.1);
+}
+
+/* Section full screen */
+.full-screen {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  scroll-margin-top: 60px;
+}
+
+/* Gaya heading h1 seragam untuk semua section */
+.home-section h1,
+.about-section h1,
+.crypto-section h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+}
+
+.home-section h1 {
+  color: #b6d9b0; /* hijau terang, sama dengan crypto */
+}
+
+.about-section h1 {
+  color: #064635; /* hijau gelap, warna asli About */
+}
+
+.crypto-section h1 {
+  color: #b6d9b0; /* hijau terang */
+}
+
+/* Home section */
+.home-section {
+  background: linear-gradient(90deg, #064635, #043927);
+}
+
+.home-section .subtitle {
+  font-style: italic;
+  font-size: 1.2rem;
+  color: #b6d9b0;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+/* About section */
+.about-section {
+  background-color: #b6d9b0;
+  color: #064635;
+  justify-content: flex-start;
+  padding-top: 120px;
+}
+
+.about-desc {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  max-width: 700px;
+  padding: 0 1rem;
+  line-height: 1.6;
+  text-align: justify;  /* tambahan ini untuk justify */
+}
+
+/* Learn section */
+.learn-section {
+  background: linear-gradient(90deg, #064635, #043927);
+  color: #b6d9b0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem;
+  text-align: center;
+  height: 100vh;
+  box-sizing: border-box;
+  scroll-margin-top: 60px;
+  position: relative;
+}
+
+.learn-buttons {
+  display: flex;
+  gap: 1.5rem;              /* jarak antar tombol */
+  padding: 0 2rem;          /* jarak kiri dan kanan ke ujung layar */
+  box-sizing: border-box;   /* supaya padding dihitung di lebar container */
+  width: 100%;
+  max-width: 100vw;         /* maksimal selebar viewport */
+  justify-content: center;
+}
+
+.learn-btn {
+  flex: 1 1 0;             /* flexible, sama rata, basis 0 */
+  min-width: 140px;        /* minimal lebar tombol agar tetap bagus */
+  background-color: #0b513a;
+  color: #b6d9b0;
+  padding: 1rem 0;
+  border-radius: 6px;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+  text-decoration: none;
+  font-size: 1.2rem;
+  text-align: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover */
+.learn-btn:hover {
+  background-color: #14a76c;
+  color: #064635;
+}
+
+.learn-content {
+  margin-top: 2rem;
+  max-width: 800px;
+  text-align: left;
+  color: #b6d9b0; /* atau warna yang sesuai tema */
+  font-family: 'Inter', sans-serif;
+}
+
+/* Community section */
+/* Community section */
+.community-section {
+  /* background gambar */
+  background-image: url('images/bgcommunity.jpg');
+  background-size: cover;       /* biar gambar memenuhi area */
+  background-position: center;  /* gambar di tengah */
+  background-repeat: no-repeat; /* tidak diulang */
+  
+  color: #064635;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+.community-section h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+  color: #b6d9b0;  /* warna hijau terang, samakan dengan home-section */
+}
+
+.community-desc {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  max-width: 700px;
+  line-height: 1.6;
+  text-align: justify;
+  color: #064635;
+}
+
+.community-box {
+  background-color: rgba(182, 217, 176, 0.7); /* semi-transparent */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  padding: 2rem 2.5rem;
+  border-radius: 12px;
+  max-width: 700px;
+  width: 90%;
+  box-sizing: border-box;
+  text-align: justify;
+}
+
+.home-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+  color: #b6d9b0; /* hijau terang, sama dengan home-section */
+}
+
+.cryptocurrency-section {
+  padding: 0 3rem;
+}
+
+.cryptocurrency-section .justify-text {
+  text-align: justify; /* Menjadikan teks rata kiri-kanan */
+}
+
+.blockchain-section {
+  padding: 0 3rem; /* Memberikan padding sisi kiri dan kanan lebih besar */
+}
+
+.blockchain-section .justify-text {
+  text-align: justify; /* Menjadikan teks rata kiri-kanan */
+}
+
+.defi-section {
+  padding:0 3rem;
+}
+
+.defi-section .justify-text {
+  text-align: justify; 
+}
+
+.nfts-section {
+  padding: 0 3rem; 
+}
+
+.nfts-section .justify-text {
+  text-align: justify; 
+}
+
+.cryptocurrency-section {
+  padding: 0 3rem; 
+  background-image: url('images/cryptocurrency.png'); 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+}
+
+.blockchain-section {
+  padding: 0 3rem; 
+  background-image: url('images/blockchain.png'); 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+}
+
+.defi-section {
+  padding: 0 3rem; 
+  background-image: url('images/defi.png'); 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+}
+
+.nfts-section {
+  padding: 0 3rem; 
+  background-image: url('images/nfts.png'); 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+}
